@@ -1,4 +1,4 @@
-#include "week02.hpp"
+#include "week2.hpp"
 
 void week02::drawStar( )
 {
