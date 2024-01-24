@@ -1,6 +1,6 @@
 #include<iostream>
 
-namespace week02{
+namespace week2{
 
 	void drawStar();
 	int add( int a, int b );
