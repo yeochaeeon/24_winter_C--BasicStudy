@@ -10,15 +10,16 @@ namespace week04
             char * m_name;
             int m_hp;
             int m_power;
-            
+
 		// 멤버 함수 ( Attack, GetInfo )
         public:
             void Attack(Human &defender) ;
             void GetInfo(Human) ;
 
-		// 생성자 ( 매개변수 없는 디폴트 생성자, 매개변수 m_name, m_hp, m_power인 생성자 )
-            Human(); // 디폴트 생성자 선언 
-            Human( char* t_name, int t_hp, int t_power ); // 생성자 선언 
+		// 생성자 ( 1. 매개변수 없는 디폴트 생성자, 2. 매개변수 m_name, m_hp, m_power인 생성자 )
+    
+            Human(); // 1. 디폴트 생성자 선언 
+            Human( char* t_name, int t_hp, int t_power ); // 2. 매개변수가 있는 생성자 선언 
 	} ;
 
 }
