@@ -17,7 +17,7 @@ class Human
     //  : m_name( t_name ), m_age( t_age ) {}
 
     // ¼Ò¸êÀÚ
-    ~Human() {}
+    ~Human() {};
 
     
 
@@ -27,10 +27,6 @@ class Human
     int m_age ;
 };
 
-// void Human::show(){
-//   std::cout << <<std::endl;
-//   std::cout << <<std::endl;
-// }
 
 Human::Human( char* t_name, int t_age )
 {
