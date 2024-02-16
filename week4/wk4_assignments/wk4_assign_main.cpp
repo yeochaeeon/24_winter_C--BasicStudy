@@ -34,7 +34,7 @@ int main( )
 {
 	////// 객체 생성
 	week04::Human attacker ; // 디폴트 생성자 암시적 호출 
-	week04::Human defender( "이창율", 50, 10);
+	week04::Human defender("이창율", 50, 10);
 
 	////// 공격 전 객체 정보 확인
 	std::cout << "\n====================== " << std::endl;	
