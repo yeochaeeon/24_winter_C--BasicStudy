@@ -1,5 +1,6 @@
 #include "wk4_assign.hpp"
-#include <iostream>
+// #include <iostream> 
+// hpp에 포함되어 있기 때문에 해줄 필요가 없음..
 
 /////// Human 클래스의 생성자 정의 ( 1.매개변수가 없는 생성자, 2. 매개변수 m_name, m_hp, m_power인 생성자)
 
@@ -25,8 +26,10 @@ void week04::Human::Attack(Human &defender) {
     std::cout << "데미지 " << m_power << "만큼의 공격 수행!" << std::endl
                 << "공격자: " << m_name << " => " << "방어자: " << defender.m_name << std::endl;
 
-    defender.m_hp -= 10;
+    defender.m_hp -= this->m_power;
 }
+// this -> m_power 로 길게 적을 수 있음 .. 나중에 코드이해를 돕기 위해서는 this 를 써주는게 좋음 ...
+// this 를 안써주면 어떤 객체인지 판단하기 어려워짐 
 ///////////////////////////////////////////
 
 
