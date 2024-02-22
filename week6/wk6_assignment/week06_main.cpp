@@ -3,18 +3,31 @@
 
 //// ( 1 ) ////
 ////// Animal의 생성자, 소멸자, GetName 정의
+week06::Animal::Animal(std::string t_name) {
+    m_name = t_name;
+}
 
+week06::Animal::~Animal(){}
 
-
-
-
-
+std::string week06::Animal::GetName(){
+    return m_name;
+}
 
 ////////////////////////////////////////
 
 ////// Dog의 생성자, Action 정의
 
+week06::Dog::Dog(std::string t_name ,int t_waveNumber) {
+    
+    Animal(t_name) = t_name;
+    m_waveNumber = t_waveNumber;
 
+}
+void week06::Dog::Action() {
+
+    std::cout << GetName() << " 이(가) 꼬리를 " << m_waveNumber << "번 흔듭니다 !" << std::endl ;
+
+}
 
 
 
